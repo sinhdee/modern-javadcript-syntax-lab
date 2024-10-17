@@ -122,7 +122,7 @@ const localLangConfig = null;  // Change to 'es', 'fr', etc., or keep it null
 // b. Assign LANG the value of localLangConfig or 'en' as a default
 
 // Your code here
-
+const LANG = localLangConfig || 'en';
 // Log the result
 console.log('Language setting:', LANG);
 
