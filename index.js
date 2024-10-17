@@ -52,7 +52,7 @@ console.log(controversialPizzaToppings);
 
 // Duplicate the following object and spread its values into a new variable `myCar`.
 
-const car = {
+const originalCar = {
     make: 'Audi',
     model: 'q5',
   };
@@ -60,4 +60,69 @@ const car = {
   // Change the `model` property of `myCar` to 'q7'. Log both objects.
   
   // Your code here
-  
+const myCar = {...originalCar}
+
+myCar.model = 'q7';
+
+console.log('Clone: ', myCar);
+
+// Create an object named userProfile. 
+// Define a variable named propertyName and assign a string to it (like a username, age, or email). 
+// Use propertyName as a dynamic key in userProfile, assigning a relevant value.
+
+// Your code here
+
+const userProfile = {}
+
+const propertyName = 'username'
+
+userProfile[propertyName] = 'Cindy Le';
+
+console.log(userProfile);
+
+// Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
+
+// 1. `cat`
+
+// 2. `white`
+
+// The function should log a sentence 'The cat is white.' by default. The function should substitute the appropriate parameters when supplied arguments.
+
+// Your code here
+
+function nounAndAdjective (noun = 'cat', adjective = 'white') {
+  console.log(`The ${noun} is ${adjective}.`)
+}
+
+nounAndAdjective();
+
+// Convert the following `if...else` statement in to a ternary:
+
+let secondPizza = 'tasty';
+
+if (secondPizza === 'tasty') {
+  console.log('yum');
+} else {
+  console.log('yuck');
+}
+
+// Your code here
+let thirdPizza = 'tasty';
+console.log(thirdPizza==='tasty' ? 'yum': 'yuck');
+
+// 1. SET LANGUAGE
+
+// Construct a single line of code that assigns a default value using the logical OR operator. This line should match the logic of the following statement: 
+
+// "LANG is equal to localLangConfig or the default value of English."
+
+const localLangConfig = null;  // Change to 'es', 'fr', etc., or keep it null
+
+// a. Create a variable called LANG
+// b. Assign LANG the value of localLangConfig or 'en' as a default
+
+// Your code here
+
+// Log the result
+console.log('Language setting:', LANG);
+
